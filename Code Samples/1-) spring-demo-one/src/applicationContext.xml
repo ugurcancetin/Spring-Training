@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Load the property file: sport.property -->
+	<context:property-placeholder location="classpath:sport.properties"/>
+
+	<!-- define the dependency -->
+	<bean id="myFortune"
+	class="com.ugurcan.springdemo.HappyFortuneService"></bean>
+
+
+	<bean id="myCoach"
+	class="com.ugurcan.springdemo.FootballCoach">
+	
+	<!-- setup the constructor injection -->
+	<constructor-arg ref="myFortune" />
+	</bean>
+
+	<bean id="myCricketCoach"
+		class="com.ugurcan.springdemo.CricketCoach">
+		
+	<!-- setup the setter injection   -->
+	<property name="fortuneService" ref="myFortune"/>
+	
+	<!-- setup literal values   -->
+	<!-- This hard-coded style
+	<property name="emailAdress" value="ugurcancetin@liferay.com"/>
+	<property name="team" value="Galatasaray"/>  
+	-->
+	<property name="emailAdress" value="${foo.email}"/>
+	<property name="team" value="${foo.team}"/>  
+	</bean>
+
+
+</beans>
+
+
+
+
+
