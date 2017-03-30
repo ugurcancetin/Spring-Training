@@ -7,7 +7,8 @@
 6-Bu islemden sonra BaseballCoach classimiz Coach interface'inden implement edilsin. Dolayisiyla methodumuzun basina da @override anatasyonunu ekliyelim.
 7-Sonra MyApp classimizda 
 	Coach theCoachNesnesi = new BaseballCoach();
-		seklinde yaparak generic interface uzerinden theCoachNesnesi'ni herhangi bir Coach implementasyonundan getDailyWorkout methoduna 	 	ulasabiliriz.
+		seklinde yaparak generic interface uzerinden theCoachNesnesi'ni herhangi bir Coach implementasyonundan getDailyWorkout methoduna 
+	ulasabiliriz.
 
 8-Kodumuzu calistirip bir review yapabiliriz.
 
@@ -16,10 +17,12 @@
 1-Eger BaseballCoach sinifindan degilde baska bir sinifi yazmak isteseydik:
 	Coach theCoachNesnesi = new TrackCoach();
 2-Alacagimiz hatayi gozden gecirdigimizde IDE bizden yeni bir class olusturmamizi onerecek ve biz kabul edersek 
-	TrackCoach adinda Coach Interface'den implement edilmis ve dolayisiyla interface'imizdeki methodlarimizda override edilmis sekilde bir class 	 	olusturacaktir.
+	TrackCoach adinda Coach Interface'den implement edilmis ve dolayisiyla interface'imizdeki methodlarimizda override edilmis sekilde 
+	bir class olusturacaktir.
 3-Baska bir String degerini Return edebiliriz getDailyWorkout Methodunu kullanarak.
 4-Bu yontemle istedigimiz trainerden getDailyWorkout methoduna ulasabiliriz.
-5-Su anda bu istegimiz gerceklesmis olsada coach classlari configurable sekilde degildir. Yani hardcoded seklindedir. Bu da cok istenilen bir durum 		olmadigindan uygulamamiz tam amacina ulasmamis olsada dogru sekilde calismaktadir.
+5-Su anda bu istegimiz gerceklesmis olsada coach classlari configurable sekilde degildir. Yani hardcoded seklindedir. Bu da cok istenilen bir durum 
+	olmadigindan uygulamamiz tam amacina ulasmamis olsada dogru sekilde calismaktadir.
 6-Kodumuzu calistirip bir daha review yapabiliriz.
 
 =========================================================SECTION 3========================================================================================
