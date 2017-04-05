@@ -46,3 +46,26 @@ Aciklamarimiz:
 	1-Bir tane applicationContext.xml file olusturup icerisine bir bean birakacagiz. bean id ve class degiskenlerini icerecek.
 	2-Spring Container genellikle ApplicationContext olarak bilinen java classimizdir ve xml file buradan okuruz.
 	3-Sonrasinda artik bizim uygulamamiz Spring Object Factory ile konusup xml filedaki konfige gore bize bean getirir.
+
+==========================================================SECTION 5========================================================================================
+
+1-Xml file olusturalim ve adi applicationContext olsun. Sourcecode kisminda bu file ulasabiliriz.
+	<bean id="myCoach"
+	class="com.ugurcan.springdemo.FootballCoach">
+
+2-Bir tane HelloSpringApp adinda Java sinifi olusturuyoruz ve bu sinif main sinifimiz oluyor. (Main methoda tiklayip oyle olusturursak bize yardimci olur)
+3-Bu sinifta yapilacak adimlar genel olarak
+			-->load the spring config file
+				ClassPathXMLApplicationContext context = ClassPathXMLApplicationContext("applicationContext.xml");
+
+			-->retrieve beans from the spring container
+				Coach theCoach = context.getBean("myCoach", Coach.class);
+								  beanid  , interface
+
+			-->call the methods on the bean
+				sysout(theCoach.getDailyWorkout);
+
+			-->close the context
+				context.close();
+4-Burada yaptigimiz islem artik theCoach nesnemiz config file'a gore hareket edicek ve orada hangi sinifi tanimlar ise o siniftan nesnesini uretecektir.
+	Yani hangi sinifin adi yazili ise ise class= kisminin icinde o classtan nesnemizi olustururuz. Programimiz artik bir config file ile config edilebilir.
