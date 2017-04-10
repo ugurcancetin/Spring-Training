@@ -4,7 +4,7 @@ public class MyApp {
 
 	public static void main(String[] args) {
 		
-		Trainer trainer = new SpringTrainer();
+		Trainer trainer = new JavaTrainer();
 		
 		System.out.println(trainer.getDailyTraining());
 
