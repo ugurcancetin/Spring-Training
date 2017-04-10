@@ -1,6 +1,6 @@
 package com.ugurcan.spring.training;
 
-public class MyApp {
+/*public class MyApp {
 
 	public static void main(String[] args) {
 		
@@ -11,3 +11,4 @@ public class MyApp {
 	}
 
 }
+*/
