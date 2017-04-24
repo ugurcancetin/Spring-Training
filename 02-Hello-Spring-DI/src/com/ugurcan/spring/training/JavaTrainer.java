@@ -7,6 +7,12 @@ public class JavaTrainer implements Trainer{
 		
 		return "Study 1hr Java everyday";
 	}
+
+	@Override
+	public String getDailyFortune() {
+		
+		return null;
+	}
 	
 	
 }

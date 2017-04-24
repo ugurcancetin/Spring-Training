@@ -4,4 +4,5 @@ public interface Trainer {
 	
 	public String getDailyTraining();
 
+	public String getDailyFortune();
 }

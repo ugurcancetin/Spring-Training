@@ -8,8 +8,14 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<!-- define the dependency -->
+	<bean id="myFortune"
+		class="com.ugurcan.spring.training.HappyFortuneService">	
+	</bean>
+	
 	<bean id="myTrainer"
-		class="com.ugurcan.spring.training.JavaTrainer">
+		class="com.ugurcan.spring.training.SpringTrainer">
+		<!-- setup the constructor injection -->
+		<constructor-arg ref="myFortune"></constructor-arg>
 	</bean>
 
 
