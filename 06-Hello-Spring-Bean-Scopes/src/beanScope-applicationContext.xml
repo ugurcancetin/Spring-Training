@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- define the dependency -->
+	<bean id="myFortune"
+		class="com.ugurcan.spring.training.HappyFortuneService">	
+	</bean>
+	
+	<!-- If we don't write scope as prototype, by default the bean will be singleton. Which means same
+		 address in the memory so same object. If we set it as prototype, this means different memory location
+		 and different objects.  -->
+	<bean id="myTrainer"
+		class="com.ugurcan.spring.training.SpringTrainer"
+		scope="prototype">
+	<!-- ===== ********** ================= -->		
+		<!-- setup the constructor injection -->
+		<constructor-arg ref="myFortune"></constructor-arg>
+	</bean>
+
+</beans>
+
+
+
+
+
+
