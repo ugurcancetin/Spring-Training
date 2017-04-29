@@ -1,9 +1,0 @@
-
-What is it IoC exactly ?
-
--> The approach of outsourcing the construction and management of objects.
--> Outsourcing will be handling by the object factory
-
-A little example for the IoC :
-
-Will be updated soon
