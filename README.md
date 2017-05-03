@@ -18,12 +18,10 @@ used one of the IDE that Java developers use, you don't need to worry about anyt
 What things you need to install the software and how to install them
 
 ```
-JDK
-JRE
 Java Application Server - Tomcat 8.0.x
 An Java Integrated Development Environment (IDE) - Eclipse
-Spring Jar Files
-
+Spring Jar Files/Some other jars like common-logins.jar
+JDK/JRE/
 ```
 
 ## How To use
