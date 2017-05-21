@@ -28,6 +28,16 @@ JDK/JRE/
 
 Simply, Master branch includes all the examples with the specific commits in the history. There are several other branches to see the topics that has been added by the time.
 
+My recommandation is follow the branches based on the order that is given below:
+```
+1-) Spring Core
+2-) Spring MVC
+3-) Form Validation
+4-) Hibernate
+5-) CRUD Project
+6-) Master
+```
+
 ### Installing
 
 Listed items are very popular in open source world and you can find many different tutorials. Just search for it!
