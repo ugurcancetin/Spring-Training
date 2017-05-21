@@ -26,6 +26,7 @@ JDK/JRE/
 
 ## How To use
 
+Simply, Master branch includes all the examples with the specific commits in the history. There are several other branches to see the topics that has been added by the time.
 
 ### Installing
 
