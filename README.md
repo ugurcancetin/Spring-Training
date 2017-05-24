@@ -37,6 +37,8 @@ My recommandation is follow the branches based on the order that is given below:
 5-) CRUD Project
 6-) Master
 ```
+Branches are adding the topics on the top of previous branch. You will be able to recognize the differences between the branches if you follow the order which is given up. The titles of the examples also gives an info about the example content. 
+If not enough, you can check out commit message for little bit more detailly info.
 
 ### Installing
 
