@@ -18,11 +18,17 @@
 		<constructor-arg ref="myFortune"></constructor-arg>
 	</bean>
 
-		<bean id="GolangTrainer"
-		class="com.ugurcan.spring.training.GolangTrainer">	
-		<!-- setup the setter injection -->
-		<property name="fortuneService" ref="myFortune"></property>
-	</bean>
+    <bean id="GolangTrainer"
+        class="com.ugurcan.spring.training.GolangTrainer">  
+        <!-- setup the setter injection -->
+        <property name="fortuneService" ref="myFortune"></property>
+    </bean>
+
+    <bean id="PhytonTrainer"
+        class="com.ugurcan.spring.training.PhytonTraining">  
+        <!-- setup the setter injection -->
+        <property name="fortuneService" ref="myFortune"></property>
+    </bean>
 
 </beans>
 
