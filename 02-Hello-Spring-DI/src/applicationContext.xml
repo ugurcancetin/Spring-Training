@@ -13,7 +13,7 @@
 	</bean>
 	
 	<bean id="myTrainer"
-		class="com.ugurcan.spring.training.SpringTrainer">
+		class="com.ugurcan.spring.training.JavaTrainer">
 		<!-- setup the constructor injection -->
 		<constructor-arg ref="myFortune"></constructor-arg>
 	</bean>

@@ -9,8 +9,7 @@ public class SpringTrainer implements Trainer {
 	public SpringTrainer(FortuneService fortuneService) {
 		this.fortuneService = fortuneService;
 	}
-	
-	
+
 	@Override
 	public String getDailyTraining(){
 		

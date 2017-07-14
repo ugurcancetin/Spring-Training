@@ -13,10 +13,10 @@ public class HelloSpringApp {
 		//retrieve bean from spring container
 		Trainer trainer = context.getBean("myTrainer", Trainer.class);
 
+		//Without DI as Trainer IoC 
 		FortuneService fortuneService = context.getBean("myFortune", FortuneService.class);
 		System.out.println(fortuneService.getFortune());
-		
-		
+
 		//call methods on the bean
 		System.out.println(trainer.getDailyTraining());
 
