@@ -5,4 +5,6 @@ public interface Trainer {
 	public String getDailyTraining();
 
 	public String getDailyFortune();
+	
+	public void test();
 }

@@ -19,9 +19,10 @@ public class JavaTrainer implements Trainer{
 
 	@Override
 	public String getDailyFortune() {
-
 		return null;
 	}
-	
-	
+
+	public void test(){
+		fortuneService.testFortune();
+	}
 }

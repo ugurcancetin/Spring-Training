@@ -22,4 +22,9 @@ public class SpringTrainer implements Trainer {
 		//use my fortuneService to get a fortune
 		return fortuneService.getFortune();
 	}
+
+	@Override
+	public void test() {
+		fortuneService.testFortune();
+	}
 }

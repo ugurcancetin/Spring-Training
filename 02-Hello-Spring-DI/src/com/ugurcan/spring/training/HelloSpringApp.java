@@ -23,6 +23,9 @@ public class HelloSpringApp {
 		//let's call our new methods for fortunes
 		System.out.println(trainer.getDailyFortune());
 
+		//Reach the test method
+		trainer.test();
+
 		//close the context
 		context.close();
 	}

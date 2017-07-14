@@ -7,4 +7,10 @@ public class HappyFortuneService implements FortuneService {
 		return "This is from HappyFortuneService class";
 	}
 
+	@Override
+	public void testFortune() {
+		System.out.println("Test for the Happy Fortune Class");
+		
+	}
+
 }
