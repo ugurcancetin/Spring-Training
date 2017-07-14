@@ -11,7 +11,7 @@
 	<bean id="myFortune"
 		class="com.ugurcan.spring.training.HappyFortuneService">	
 	</bean>
-	
+
 	<bean id="myTrainer"
 		class="com.ugurcan.spring.training.SpringTrainer">
 		<!-- setup the constructor injection -->
@@ -20,7 +20,6 @@
 
 		<bean id="GolangTrainer"
 		class="com.ugurcan.spring.training.GolangTrainer">	
-		
 		<!-- setup the setter injection -->
 		<property name="fortuneService" ref="myFortune"></property>
 	</bean>
